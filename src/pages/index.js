@@ -9,13 +9,11 @@ import styled from 'styled-components';
 const Paragraph = styled.p`
   color: var(--gray-9);
   font-size: 1.25rem;
-  font-family: var(--sans-serif);
   line-height: 1.6;
 `;
 const Heading3 = styled.h3`
   font-size: 1.5rem;
   line-height: 1.25;
-  font-family: var(--sans-serif);
   margin-top: 0;
   margin-bottom: var(--space-xs);
 `;
