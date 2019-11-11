@@ -4,7 +4,36 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+// import { rhythm, scale } from "../utils/typography"
+
+import styled from 'styled-components';
+
+const Date = styled.p`
+  font-size: var(--f6);
+  font-family: var(--code);
+  color: var(--gray-6);
+  text-align: center;
+`;
+const Header = styled.header`
+  h1 {
+    font-family: var(--sans-serif);
+    font-size: var(--f1);
+    margin-bottom: var(--space-sm);
+    line-height: var(--lh-solid);
+  }
+  margin-bottom: var(--space-xxl);
+`;
+const Nav = styled.nav`
+  margin: var(--space-xl) 0;
+  li {
+    font-size: var(--f6);
+    font-family: var(--code);
+  }
+`;
+const Section = styled.section`
+  margin: 0 0 var(--space-xxl);
+  padding: 0 0 var(--space-xxl);
+`;
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -19,37 +48,22 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
-          <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
+          <Header>
+            <h1>
               {post.frontmatter.title}
             </h1>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
+            <Date>
               {post.frontmatter.date}
-            </p>
-          </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
+            </Date>
+          </Header>
+          <Section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <hr />
           <footer>
             <Bio />
           </footer>
         </article>
 
-        <nav>
+        <Nav>
           <ul
             style={{
               display: `flex`,
@@ -74,7 +88,7 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </ul>
-        </nav>
+        </Nav>
       </Layout>
     )
   }

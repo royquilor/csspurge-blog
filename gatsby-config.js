@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `CSSPurge`,
     author: `Roy Quilor`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `A blog about CSS and HTML, the journey of a Web Designer.`,
+    siteUrl: `https://csspurge.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `csspurge`,
     },
   },
   plugins: [
@@ -36,7 +36,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: `margin-bottom: 1rem`,
             },
           },
           `gatsby-remark-prismjs`,
@@ -68,12 +68,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     `gatsby-plugin-styled-components`,
   ],
 }

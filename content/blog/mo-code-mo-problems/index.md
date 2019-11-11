@@ -1,7 +1,7 @@
 ---
-title: Hello World
+title: Mo CSS, Mo Problems
 date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "You may not know, but your CSS is getting out of control, it may even have a mind of its own."
 ---
 
 This is my first post on my new fake blog! How exciting!
