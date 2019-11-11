@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `CSS Purge`,
+    title: `CSSPurge`,
     author: `Roy Quilor`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -74,5 +74,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-styled-components`,
   ],
 }
