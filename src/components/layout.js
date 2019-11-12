@@ -6,14 +6,45 @@ import { GlobalStyle } from '../theme/globalStyle';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-  background: var(--gray-50);
-
+  border-bottom: 1px solid rgba(0,0,0,.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: var(--space-xxl) 0;
   margin-bottom: var(--space-xl);
+`;
+const SiteTitle = styled.h1`
+  margin: 0 0 var(--space-xs);
+  line-height: var(--lh-solid);
+  font-weight: bold;
+  a {
+    color: var(--gray-8);
+  }
+`;
+const SiteDescription = styled.p`
+  font-size: var(--f5);
+  margin: 0;
+  color: var(--gray-6);
+`;
+const MainWrap = styled.div`
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  pre,
+  ul,
+  ol,
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 36rem;
+  }
+  blockquote p {
+    max-width: 60rem;
+  }
 `;
 const PostHeader = styled.div`
   display:flex;
@@ -26,43 +57,15 @@ const PostHeader = styled.div`
     position:absolute;
     left: var(--space-xl);
   }
-`;
-const SiteTitle = styled.h1`
-  margin: 0 0 var(--space-xs);
-  line-height: var(--lh-solid);
-  font-weight: bold;
   a {
-    color: var(--gray-8);
-  }
-`;
-const MainWrap = styled.div`
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol,
-  footer {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 42rem;
-  }
-  blockquote p {
-    max-width: 60rem;
+    color: var(--gray-9);
   }
 `;
 const Footer = styled.div`
   font-family: var(--code);
-  font-size: var(--f6);
+  font-size: var(--f7);
   margin: var(--space-xxl) 0;
   text-align: center;
-`;
-const SiteDescription = styled.p`
-  font-family: var(--code);
-  font-size: var(--f6);
-  margin: 0;
   color: var(--gray-6);
 `;
 

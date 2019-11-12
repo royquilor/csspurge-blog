@@ -12,14 +12,14 @@ import Image from "gatsby-image"
 import styled from 'styled-components';
 
 const Paragraph = styled.p`
-  font-family: var(--code);
   font-size: var(--f6);
   margin: 0 0 0 var(--space);
+  padding-left: var(--space);
 `;
 const BioWrapper = styled.div`
   display: flex;
   align-items:center;
-  margin: var(--space-xxl) 0;
+  margin: var(--space-xxl) var(--space) var(--space-xxl) 0;
   padding: var(--space-xxl) 0;
 `;
 

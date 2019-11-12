@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 import styled from 'styled-components';
 
 const Date = styled.p`
-  font-size: var(--f6);
+  font-size: var(--f7);
   font-family: var(--code);
   color: var(--gray-6);
   text-align: center;
@@ -25,14 +25,52 @@ const Header = styled.header`
 `;
 const Nav = styled.nav`
   margin: var(--space-xl) 0;
+  display: flex;
+  ul {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
   li {
-    font-size: var(--f6);
-    font-family: var(--code);
+    font-size: var(--f3);
+    font-weight: 600;
+    font-family: var(--orbitron);
+  }
+  li:first-child a {
+    color: var(--orange-6);
+  }
+  li:last-child a {
+    color: var(--red-6);
   }
 `;
 const Section = styled.section`
   margin: 0 0 var(--space-xxl);
   padding: 0 0 var(--space-xxl);
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  p,
+  li {
+    font-family: var(--serif);
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  pre {
+    max-width: 44rem;
+  }
+  h2 {
+    margin-bottom: var(--space-lg);
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-family: var(--serif);
+  }
 `;
 
 class BlogPostTemplate extends React.Component {
@@ -57,22 +95,13 @@ class BlogPostTemplate extends React.Component {
             </Date>
           </Header>
           <Section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
           <footer>
             <Bio />
           </footer>
         </article>
 
         <Nav>
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
+          <ul>
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">

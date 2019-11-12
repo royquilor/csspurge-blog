@@ -6,28 +6,29 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from 'styled-components';
 
-const Paragraph = styled.p`
-  color: var(--gray-9);
-  font-size: 1.25rem;
-  line-height: 1.6;
+const Article = styled.article`
+  padding: var(--space-xl) 0;
 `;
-const Heading3 = styled.h3`
-  font-size: 1.5rem;
-  line-height: 1.25;
-  margin-top: 0;
-  margin-bottom: var(--space-xs);
+const Header = styled.header`
+  text-align:center;
 `;
 const Date = styled.p`
-  font-size: var(--f6);
+  font-size: var(--f7);
   font-family: var(--code);
   margin: 0;
   color: var(--gray-6);
 `;
-const Header = styled.header`
-
+const Heading3 = styled.h3`
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-family: var(--orbitron);
+  margin-top: var(--space);
+  margin-bottom: var(--space);
 `;
-const Article = styled.article`
-  padding: var(--space-xl) 0;
+const Paragraph = styled.p`
+  color: var(--gray-9);
+  font-size: var(--f5);
+  line-height: var(--lh-copy);
 `;
 
 class BlogIndex extends React.Component {
@@ -38,6 +39,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <div id="component-cssfilesize"></div>
         <SEO title="All posts" />
         {/*
           <Bio />
@@ -47,12 +49,12 @@ class BlogIndex extends React.Component {
           return (
             <Article key={node.fields.slug}>
               <Header>
+                <Date>{node.frontmatter.date}</Date>
                 <Heading3>
                   <Link to={node.fields.slug}>
                     {title}
                   </Link>
                 </Heading3>
-                <Date>{node.frontmatter.date}</Date>
               </Header>
               <section>
                 <Paragraph
