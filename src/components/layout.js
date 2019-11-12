@@ -6,8 +6,8 @@ import { GlobalStyle } from '../theme/globalStyle';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-  background: black;
-  color: white;
+  background: var(--gray-50);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,18 +21,18 @@ const PostHeader = styled.div`
   justify-content: center;
   padding: var(--space-xl);
   h3 {
-    font-family: var(--marvin);
+    font-family: var(--orbitron);
     margin: 0;
     position:absolute;
     left: var(--space-xl);
   }
 `;
 const SiteTitle = styled.h1`
-  margin: 0;
+  margin: 0 0 var(--space-xs);
   line-height: var(--lh-solid);
-  letter-spacing: .25rem;
+  font-weight: bold;
   a {
-    color: white;
+    color: var(--gray-8);
   }
 `;
 const MainWrap = styled.div`

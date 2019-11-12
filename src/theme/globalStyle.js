@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     --sans-serif: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
     --serif: 'minion pro',georgia,times,serif;
     --marvin: 'Marvin Visions Big';
+    --orbitron: 'Orbitron';
     --code: Menlo, Consolas, monaco, monospace;
     --courier: 'Courier Next', courier, monospace;
 
@@ -28,7 +29,9 @@ export const GlobalStyle = createGlobalStyle`
     --space-xl: 2rem;
     --space-xxl: 3rem;
 
+    --gray-50: #FAFAFA;
     --gray-6: #757575;
+    --gray-8: #212121;
     --gray-9: #333333;
 
   }
@@ -40,6 +43,38 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: bold;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Orbitron';
+    src: url('../../orbitron/Orbitron-Light.woff2') format('woff2'),
+        url('../../orbitron/Orbitron-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Orbitron';
+      src: url('../../orbitron/Orbitron-Medium.woff2') format('woff2'),
+          url('../../orbitron/Orbitron-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Orbitron';
+      src: url('../../orbitron/Orbitron-Bold.woff2') format('woff2'),
+          url('../../orbitron/Orbitron-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'Orbitron';
+      src: url('../../orbitron/Orbitron-Black.woff2') format('woff2'),
+          url('../../orbitron/Orbitron-Black.woff') format('woff');
+      font-weight: 900;
+      font-style: normal;
+  }
+
   body {
     padding: 0;
     margin: 0;
@@ -52,12 +87,14 @@ export const GlobalStyle = createGlobalStyle`
     list-style-type: none;
   }
   h1 {
-    font-family: var(--marvin);
-    font-size: 4rem;
+    font-family: var(--orbitron);
+    font-size: 3rem;
     text-align: center;
   }
+
+
   h2,h3,h4,h5,h6,p,li {
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
     line-height: var(--lh-title);
   }
   h2 {
@@ -95,11 +132,16 @@ export const GlobalStyle = createGlobalStyle`
   blockquote p,
   article section blockquote p:only-child {
     font-size: var(--f1);
-    font-family: var(--serif);
-    font-style: italic;
+    font-family: var(--orbitron);
     line-height: var(--lh-title);
     color: var(--gray-6);
     margin: var(--space-xxl) auto;
+    background: #8A2387;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
   article {
     position: relative;

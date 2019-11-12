@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `CSSPurge`,
+    title: `csspurge`,
     author: `Roy Quilor`,
     description: `A blog about CSS and HTML, the journey of a Web Designer.`,
     siteUrl: `https://csspurge.com/`,

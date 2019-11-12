@@ -16,7 +16,7 @@ const Date = styled.p`
 `;
 const Header = styled.header`
   h1 {
-    font-family: var(--serif);
+    font-family: var(--orbitron);
     font-size: var(--f1);
     margin-bottom: var(--space-sm);
     line-height: var(--lh-solid);
