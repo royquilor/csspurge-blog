@@ -167,6 +167,7 @@ background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10
     position: relative;
   }
   article ul:first-child {
+    z-index: 1;
     position: fixed;
     left: 0;
     top: var(--space-xxl);
@@ -246,6 +247,7 @@ background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10
   pre {
     // border: 1px solid rgba(0,0,0,.1);
     // background-color: #fdf9f6;
+    position: relative;
   }
   .gatsby-highlight-code-line {
     background-color: #feb;
@@ -274,11 +276,11 @@ background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10
       border-radius: 0px 0px 4px 4px;
       padding: 0.25rem 0.5rem;
   }
-  .gatsby-highlight pre[class="language-css"]::before {
-      content: "css";
-  }
-  .gatsby-highlight pre[class="language-text"]::before {
-      content: "text";
-  }
+  // .gatsby-highlight pre[class="language-css"]::before {
+  //     content: "css";
+  // }
+  // .gatsby-highlight pre[class="language-text"]::before {
+  //     content: "text";
+  // }
 
 `;
