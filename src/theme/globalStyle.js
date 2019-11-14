@@ -175,7 +175,7 @@ background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10
     margin: 0;
     li {
       font-family: var(--code);
-      font-size: var(--f7);
+      font-size: var(--f8);
     }
     li:nth-child(2) a {
       color: var(--orange-6);
@@ -245,6 +245,40 @@ background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10
   }
   pre {
     // border: 1px solid rgba(0,0,0,.1);
-    background-color: #fdf9f6;
+    // background-color: #fdf9f6;
   }
+  .gatsby-highlight-code-line {
+    background-color: #feb;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+  }
+  .gatsby-highlight {
+  	position: relative;
+  }
+
+  .gatsby-highlight pre[class*="language-"]::before {
+  		color: #232129;
+      font-size: 0.75rem;
+      font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      letter-spacing: 0.075em;
+      line-height: 1;
+      position: absolute;
+      left: 1.5rem;
+      text-align: right;
+      text-transform: uppercase;
+      top: 0px;
+      border-radius: 0px 0px 4px 4px;
+      padding: 0.25rem 0.5rem;
+  }
+  .gatsby-highlight pre[class="language-css"]::before {
+      content: "css";
+  }
+  .gatsby-highlight pre[class="language-text"]::before {
+      content: "text";
+  }
+
 `;

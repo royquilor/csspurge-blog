@@ -67,33 +67,31 @@ How I reduced the total score from 252 to 61 with a 76% reduction.
 <big>462</big>
 Did you know there are only three floats?
 
-<pre><code>
+```css
   .fl { float: left; }
   .fr { float: right; }
   .fn { float: none; }
-</code>
-</pre>
+```
 
 ## <a name="heading-6"></a> Highest colors
 
 <big>462</big>
 How many colours does a brand have? Fifty shades of grey is the exception. It's possible to just have one color for all tags and then one for links
 
-<pre><code>
+```sass
   $black: #111111;
   $blue:  #0074D9;
 
   body { color: $black; }
   a { color: $blue;  }
-</code>
-</pre>
+```
 
 ## <a name="heading-7"></a> Highest font sizes
 
 <big>89</big>
 By default the web has provided 9 tags to give you a robust scale
 
-<pre><code>
+```css
   body { font-size: 16px; }
   h1 { font-size: 2.25rem; }
   h2 { font-size: 1.75rem; }
@@ -112,15 +110,14 @@ By default the web has provided 9 tags to give you a robust scale
     font-size: 18px;
    }
   }
-</code>
-</pre>
+```
 
 ## <a name="heading-8"></a> Highest font families
 
 <big>31</big>
 It is recommended to have two fonts: one for the body and one for headings. Perhaps other fonts are used to support different languages?
 
-<pre><code>
+```sass
   $copy:      SF UI Text, Arial, sans-serif;
   $heading:   SF UI Display, Arial, sans-serif;
 
@@ -134,8 +131,7 @@ It is recommended to have two fonts: one for the body and one for headings. Perh
   h6 {
       font-family: $heading;
   }
-</code>
-</pre>
+```
 
 ## <a name="heading-9"></a> Highest specificity score
 
@@ -146,25 +142,23 @@ Some sites graph is very spikey at the beginning meaning a bigger hit on the sit
 
 o style an element that requires unique styling such as a sign up link, there are many ways to target it.
 
-<pre><code>
-  &lt;nav&gt;
-      &lt;ul&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href="#"&gt;Products&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a class="btn" href="#"&gt;Sign Up&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-  &lt;/nav&gt;
-</code>
-</pre>
+```html
+  <nav>
+      <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a class="btn" href="#">Sign Up</a></li>
+      </ul>
+  </nav>
+```
 
-<pre><code>
-    // A. You could do this
-    nav ul li a.btn { }
+```css
+  // A. You could do this
+  nav ul li a.btn { }
 
-    // B. or simply
-    .btn { }
-</code>
-</pre>
+  // B. or simply
+  .btn { }
+```
 
 According to the specificity war powers, option A would be Vader:
 
@@ -193,7 +187,8 @@ New devices and screens will emerge, then you have to code for another screen.
 
 Take reference from Bruce Lee "be like water my friend".
 
-<pre><code>
+```sass
+
   $mw-s:  320px;
   $mw-m:  768px;
   $mw-l:  1024px;
@@ -218,8 +213,8 @@ Take reference from Bruce Lee "be like water my friend".
   @media screen and (min-width: $mw-xl) {
 
   }
-</code>
-</pre>
+
+```
 
 ## <a name="heading-11"></a> Highest style links
 
@@ -227,15 +222,16 @@ Take reference from Bruce Lee "be like water my friend".
 
 More external stylesheets will mean more http requests, so page speed is effected.
 
-<pre><code>
-  &lt;!-- Good for maintanence but bad for performance --&gt;
-  &lt;link rel="stylesheet" href="css/base.css"&gt;
-  &lt;link rel="stylesheet" href="css/type.css"&gt;
-  &lt;link rel="stylesheet" href="css/grid.css"&gt;
-  &lt;link rel="stylesheet" href="css/colors.css"&gt;
-  &lt;link rel="stylesheet" href="css/modules.css"&gt;
-</code>
-</pre>
+```html
+
+  <!-- Good for maintanence but bad for performance -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/type.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/modules.css">
+
+```
 
 Tools like Sass and Gulp can combine all stylesheets into one.
 
@@ -243,31 +239,29 @@ Example folder structure:
 
 <kbd>project/</kbd>
 
-<pre><code>
+```markup
   css/
   node_modules/
   sass/
   gulpfile.js
   index.html
   package.json
-</code>
-</pre>
+```
 
 <kbd>sass/</kbd>
 
-<pre><code>
+```markup
   _base.scss
   _type.scss
   _grid.scss
   _colors.scss
   _modules.scss
   styles.scss
-</code>
-</pre>
+```
 
 <kbd>gulpfile.js</kbd>
 
-<pre><code>
+```javscript
   // 1. Use gulpjs to get all your sass partials
   gulp.task('workflow', function () {
     gulp.src('sass/*.scss')
@@ -279,13 +273,11 @@ Example folder structure:
       .pipe(gulp.dest('css/'))
       .pipe(browserSync.reload({stream:true}));
   });
-</code>
-</pre>
+```
 
-<pre><code>
-  &lt;!-- Voilà! --&gt;
-  &lt;link rel="stylesheet" href="css/styles.css"&gt;
-</code>
-</pre>
+```javascript
+  <!-- Voilà! -->
+  <link rel="stylesheet" href="css/styles.css">
+```
 
 ## <a name="heading-12"></a> Resources
