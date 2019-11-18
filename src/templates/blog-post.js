@@ -50,9 +50,8 @@ const Section = styled.section`
   border-bottom: 1px solid rgba(0,0,0,.1);
   p,
   li {
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
   }
-
   h2,
   h3,
   h4,
@@ -62,14 +61,15 @@ const Section = styled.section`
   ul,
   ol,
   pre {
-    max-width: 44rem;
+    max-width: 40rem;
   }
   h2 {
     margin-bottom: var(--space-lg);
-    font-size: 1.5rem;
   }
   h3 {
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
+    margin-top: var(--space-xxl);
+    margin-bottom: var(--space-lg);
   }
 `;
 

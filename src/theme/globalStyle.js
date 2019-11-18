@@ -51,7 +51,6 @@ export const GlobalStyle = createGlobalStyle`
     --brown-6: #6D4C41;
 
   }
-
   @font-face {
     font-family: 'Marvin Visions Big';
     src: url('../../staticMarvinVisionsBig-Bold.woff2') format('woff2'),
@@ -59,7 +58,6 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: bold;
     font-style: normal;
   }
-
   @font-face {
     font-family: 'Orbitron';
     src: url('../../orbitron/Orbitron-Light.woff2') format('woff2'),
@@ -67,7 +65,6 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     font-style: normal;
   }
-
   @font-face {
       font-family: 'Orbitron';
       src: url('../../orbitron/Orbitron-Medium.woff2') format('woff2'),
@@ -75,7 +72,6 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: 500;
       font-style: normal;
   }
-
   @font-face {
       font-family: 'Orbitron';
       src: url('../../orbitron/Orbitron-Bold.woff2') format('woff2'),
@@ -90,7 +86,6 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: 900;
       font-style: normal;
   }
-
   body {
     padding: 0;
     margin: 0;
@@ -106,11 +101,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   h1 {
     font-family: var(--orbitron);
-    font-size: 3rem;
+    font-size: var(--f1);
     text-align: center;
-  }
-  h2 {
-    font-weight: 600;
   }
   h2,h3,h4,h5,h6,p,li {
     font-family: var(--sans-serif);
@@ -132,15 +124,15 @@ export const GlobalStyle = createGlobalStyle`
     font-size: var(--f6);
   }
   h2 {
-    margin: var(--space-xxl) 0 var(--space);
+    margin: var(--space-xxl) 0 var(--space-lg);
   }
   p,
   li {
-    font-size: var(--f3);
+    font-size: var(--f5);
     line-height: var(--lh-copy);
   }
   article p {
-    margin: 0 0 var(--space);
+    margin: 0 0 var(--space-lg);
   }
   ol,
   ul {
@@ -178,54 +170,29 @@ background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10
       font-family: var(--code);
       font-size: var(--f8);
     }
-    li:nth-child(2) a {
-      color: var(--orange-6);
+    li a {
+      color: var(--gray-6);
     }
-    li:nth-child(3) a {
-      color: var(--red-6);
-    }
-    li:nth-child(4) a {
-      color: var(--purple-6);
-    }
-    li:nth-child(5) a {
-      color: var(--indigo-6);
-    }
-    li:nth-child(6) a {
-      color: var(--blue-6);
-    }
-    li:nth-child(7) a {
-      color: var(--cyan-6);
-    }
-    li:nth-child(8) a {
-      color: var(--teal-6);
-    }
-    li:nth-child(9) a {
-      color: var(--green-6);
-    }
-    li:nth-child(10) a {
-      color: var(--lime-6);
-    }
-    li:nth-child(11) a {
-      color: var(--yellow-6);
-    }
-    li:nth-child(12) a {
-      color: var(--amber-6);
-    }
-    li:nth-child(13) a {
-      color: var(--deep-orange-6);
-    }
-    li:nth-child(14) a {
-      color: var(--pink-6);
-    }
-    li:nth-child(15) a {
-      color: var(--brown-6);
-    }
+    // li:nth-child(2) a { color: var(--orange-6); }
+    // li:nth-child(3) a { color: var(--red-6); }
+    // li:nth-child(4) a { color: var(--purple-6);}
+    // li:nth-child(5) a { color: var(--indigo-6);}
+    // li:nth-child(6) a {color: var(--blue-6);}
+    // li:nth-child(7) a {color: var(--cyan-6);}
+    // li:nth-child(8) a {color: var(--teal-6);}
+    // li:nth-child(9) a {color: var(--green-6);}
+    // li:nth-child(10) a {color: var(--lime-6);}
+    // li:nth-child(11) a {color: var(--yellow-6);}
+    // li:nth-child(12) a {color: var(--amber-6);}
+    // li:nth-child(13) a {color: var(--deep-orange-6);}
+    // li:nth-child(14) a {color: var(--pink-6);}
+    // li:nth-child(15) a {color: var(--brown-6);}
   }
   article section p:first-of-type {
     font-size: var(--f3);
   }
   article section p:only-child {
-    font-size: var(--f5);
+    font-size: var(--f4);
   }
   article:first-child h3 a {
     color: var(--orange-6);
@@ -245,9 +212,11 @@ background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10
     font-family: var(--code);
   }
   pre {
-    // border: 1px solid rgba(0,0,0,.1);
-    // background-color: #fdf9f6;
     position: relative;
+  }
+  code[class*="language-"],
+  pre[class*="language-"] {
+    font-size: var(--f7);
   }
   .gatsby-highlight-code-line {
     background-color: #feb;
@@ -261,7 +230,6 @@ background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10
   .gatsby-highlight {
   	position: relative;
   }
-
   .gatsby-highlight pre[class*="language-"]::before {
   		color: #232129;
       font-size: 0.75rem;
@@ -276,11 +244,4 @@ background: linear-gradient(to bottom, #F27121, #E94057, #8A2387); /* W3C, IE 10
       border-radius: 0px 0px 4px 4px;
       padding: 0.25rem 0.5rem;
   }
-  // .gatsby-highlight pre[class="language-css"]::before {
-  //     content: "css";
-  // }
-  // .gatsby-highlight pre[class="language-text"]::before {
-  //     content: "text";
-  // }
-
 `;

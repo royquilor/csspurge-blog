@@ -20,21 +20,13 @@ description: "You may not know, but your CSS is getting out of control, it may e
 - [More articles](#heading-13)
 - [Talks](#heading-14)
 
-You may not know, but your CSS is getting out of control, it may even have a mind of its own. The specificity war is happening right now and you might not even know it.
+You may not know, but your CSS is getting out of control, it may even have a mind of its own.
+
+The specificity war is happening right now and you might not even know it.
 
 Is your file always getting bigger? Are you adding stuff to the end of the file? You are showing symptoms of CSSitis. May be linked to Divitis, you can get it treated, but you have to act fast.
 
 Users time should be the highest priority. More code, more potential bugs, more time fixing things. A product should be fast, systematic and maintainable.
-
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
-
-![Chinese Salty Egg](./salty_egg.jpg)
 
 ## 42 Popular sites and frameworks
 
@@ -44,7 +36,7 @@ CSSitis is a condition that causes performance and maintainability issues. It ma
 
 Chart
 
-## <a name="heading-2"></a> Highest specificity score
+### <a name="heading-2"></a> Highest specificity score
 
 Excessive use of nesting in sass and use of !important effects performance. Remember the Inception rule, three levels down, you could lose sight of what's real.
 
@@ -58,22 +50,22 @@ Table
 
 Stats gathered from CSS Stats. Have an idea? @csspurge, roy[at]csspurge.com and Github.
 
-## <a name="heading-4"></a> Case study - Unsplash
+### <a name="heading-4"></a> Case study - Unsplash
 
 How I reduced the total score from 252 to 61 with a 76% reduction.
 
-## <a name="heading-5"></a> Highest floats
+### <a name="heading-5"></a> Highest floats
 
 <big>462</big>
 Did you know there are only three floats?
 
-```css
+```terminal
   .fl { float: left; }
   .fr { float: right; }
   .fn { float: none; }
 ```
 
-## <a name="heading-6"></a> Highest colors
+### <a name="heading-6"></a> Highest colors
 
 <big>462</big>
 How many colours does a brand have? Fifty shades of grey is the exception. It's possible to just have one color for all tags and then one for links
@@ -86,7 +78,7 @@ How many colours does a brand have? Fifty shades of grey is the exception. It's 
   a { color: $blue;  }
 ```
 
-## <a name="heading-7"></a> Highest font sizes
+### <a name="heading-7"></a> Highest font sizes
 
 <big>89</big>
 By default the web has provided 9 tags to give you a robust scale
@@ -112,7 +104,7 @@ By default the web has provided 9 tags to give you a robust scale
   }
 ```
 
-## <a name="heading-8"></a> Highest font families
+### <a name="heading-8"></a> Highest font families
 
 <big>31</big>
 It is recommended to have two fonts: one for the body and one for headings. Perhaps other fonts are used to support different languages?
@@ -133,7 +125,7 @@ It is recommended to have two fonts: one for the body and one for headings. Perh
   }
 ```
 
-## <a name="heading-9"></a> Highest specificity score
+### <a name="heading-9"></a> Highest specificity score
 
 <big>512</big>
 Frameworks are as low as 50. Too many declarations can lead to performance issues and bugs.
@@ -178,7 +170,7 @@ B:
 
 Another good reason to use classes over ID's
 
-## <a name="heading-10"></a> Highest media queries
+### <a name="heading-10"></a> Highest media queries
 
 <big>74</big>
 320 and up looks at 4 sizes on average. To cater for every screen is counter intuitive.
@@ -216,7 +208,7 @@ Take reference from Bruce Lee "be like water my friend".
 
 ```
 
-## <a name="heading-11"></a> Highest style links
+### <a name="heading-11"></a> Highest style links
 
 <big>7</big>
 
