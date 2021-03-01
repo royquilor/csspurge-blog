@@ -8702,9 +8702,9 @@ pretty-error@^2.1.1:
     renderkid "^2.0.1"
     utila "~0.4"
 
-prismjs@^1.17.1:
-  version "1.17.1"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.17.1.tgz#e669fcbd4cdd873c35102881c33b14d0d68519be"
+prismjs@^1.23.0:
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
   optionalDependencies:
     clipboard "^2.0.0"
 
@@ -10788,6 +10788,10 @@ typeface-merriweather@0.0.72:
 typeface-montserrat@0.0.75:
   version "0.0.75"
   resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz#b796d9c767ab8ed1343271985beb1e44b382b7b3"
+
+typeface-orbitron@0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-orbitron/-/typeface-orbitron-0.0.72.tgz#e3c0270cad73b29dadb9747949e2dfc208536e38"
 
 typography-breakpoint-constants@^0.16.19:
   version "0.16.19"
