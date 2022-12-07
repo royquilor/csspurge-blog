@@ -8851,8 +8851,8 @@ qs@6.7.0:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
 
 query-string@^4.1.0:
   version "4.3.4"
@@ -10788,6 +10788,10 @@ typeface-merriweather@0.0.72:
 typeface-montserrat@0.0.75:
   version "0.0.75"
   resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz#b796d9c767ab8ed1343271985beb1e44b382b7b3"
+
+typeface-orbitron@0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-orbitron/-/typeface-orbitron-0.0.72.tgz#e3c0270cad73b29dadb9747949e2dfc208536e38"
 
 typography-breakpoint-constants@^0.16.19:
   version "0.16.19"
